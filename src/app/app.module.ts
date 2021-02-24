@@ -5,9 +5,9 @@ import { FormsModule } from "@angular/forms";
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 
-import { StoreModule } from "@rxjs/store";
-import { counterReducer } from "./counter.reducer";
-import { MyCounterComponent } from './my-counter/my-counter.component';
+import { StoreModule } from "@ngrx/store";
+import { counterReducer } from "./my-counter/counter.reducer";
+import { MyCounterComponent } from "./my-counter/my-counter.component";
 
 @NgModule({
   imports: [
