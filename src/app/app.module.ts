@@ -8,7 +8,6 @@ import { HelloComponent } from "./hello.component";
 import { StoreModule } from "@ngrx/store";
 import { counterReducer } from "./counter.reducer";
 import { MyCounterComponent } from "./my-counter/my-counter.component";
-import { TryComponent } from "./try/try.component";
 
 @NgModule({
   imports: [
@@ -18,12 +17,7 @@ import { TryComponent } from "./try/try.component";
       count: counterReducer
     })
   ],
-  declarations: [
-    AppComponent,
-    HelloComponent,
-    MyCounterComponent,
-    TryComponent
-  ],
+  declarations: [AppComponent, HelloComponent, MyCounterComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
